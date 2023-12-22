@@ -1,4 +1,3 @@
-// challenge.ts
 interface User{
   name?: string;
   age?: number;
