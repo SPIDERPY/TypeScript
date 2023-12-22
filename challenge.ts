@@ -9,7 +9,7 @@ const prettyPrintWilder = (users: User[]) => users.map((user: User) => {
     console.log('${user.name} is ${user.age} years old');
   }
   if (user.birthday) {
-    console.log('{user.name} is ${user.birthday');
+    console.log('${user.name} is ${user.birthday');
   } }); 
 
    
