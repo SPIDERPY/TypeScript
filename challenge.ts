@@ -5,9 +5,14 @@ interface User{
   birthday?: string;
 }
 
-const prettyPrintWilder = (users: any):[] => users.map((user: any) => {
-  console.log(`${user.name} is ${user.age} years old ${user.birthday}`);
-});
+const prettyPrintWilder = (users: User[]) => users.map((user: User) => {
+  if (user.age) {
+    console.log('${user.name} is ${user.age} years old');
+  }
+  if (user.birthday) {
+    console.log('{user.name} is ${user.birthday');
+  } }); 
+
    
 const user1: User = { name: "Pierre", age: 23 };
 const user2: User = { name: "Paul", birthday: "10/02/1990" };
