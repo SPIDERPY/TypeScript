@@ -4,7 +4,7 @@ interface User{
   birthday?: string;
 }
 
-const prettyPrintWilder = (users: User[]): void => void users.map((user: User) => {
+const prettyPrintWilder = (users: User[]): void => users.map((user: User) => {
   if (user.age) {
     console.log(`${user.name} is ${user.age} years old`);
   }
